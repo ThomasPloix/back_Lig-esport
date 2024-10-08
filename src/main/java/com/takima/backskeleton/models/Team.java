@@ -1,12 +1,14 @@
 package com.takima.backskeleton.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-@Table(name = "region")
+@Table(name = "teams")
 @Getter
 @Entity
 public class Team {
@@ -25,8 +27,14 @@ public class Team {
     private String partners;
     @Column(name = "date_created")
     private Date creation_date;
-    @OneToMany
-    private List<Player> players;
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "team")
+    private List<Player> players =  new ArrayList<>();
+
+    @ManyToMany(mappedBy = "teams_compete")
+    private List<Compete> competes;
+
     @ManyToOne
+    @JsonIgnore
     private Region region;
 }

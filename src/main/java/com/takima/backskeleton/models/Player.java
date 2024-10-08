@@ -1,6 +1,7 @@
 package com.takima.backskeleton.models;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.v3.oas.annotations.tags.Tags;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -20,8 +21,10 @@ public class Player {
     @Column(name = "pseudo")
     private String pseudo;
     @ManyToOne(cascade = CascadeType.MERGE)
-    @JoinColumn(name = "team_id")
+    @JoinColumn(name = "team_id", referencedColumnName = "id")
+    @JsonIgnore
     private Team team;
+    //private Long player_team_id = team.getId();
 
     private Player(Builder builder) {
         this.id = builder.id;
