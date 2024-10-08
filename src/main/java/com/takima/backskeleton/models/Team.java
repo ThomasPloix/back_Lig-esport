@@ -35,6 +35,7 @@ public class Team {
     private List<Compete> competes;
 
     @ManyToOne
+    @JoinColumn(name="region_id", nullable=false)
     @JsonIgnore
     private Region region;
 }

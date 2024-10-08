@@ -1,5 +1,6 @@
 package com.takima.backskeleton.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
 
@@ -18,6 +19,6 @@ public class Region {
     private String description;
     @Column(name = "logo")
     private String logo;
-    @OneToMany
+    @OneToMany(mappedBy = "region")
     private List<Team> teams;
 }
