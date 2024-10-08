@@ -28,3 +28,34 @@ create table student_course
     student_id int not null,
     course_id int not null
 );
+create table teams
+(
+    id SERIAL PRIMARY KEY,
+    name TEXT not null,
+    description TEXT ,
+    logo TEXT,
+    date_created date not null,
+    lieu TEXT not null,
+    partners TEXT,
+    competes_in TEXT,
+    region_id int not null
+
+);
+
+create table players
+(
+    id SERIAL PRIMARY KEY,
+    first_name TEXT not null,
+    last_name TEXT not null,
+    pseudo TEXT not null,
+    team_id int not null,
+    image TEXT
+);
+
+create table regions
+(
+    id SERIAL PRIMARY KEY,
+    name TEXT not null,
+    description TEXT not null,
+    logo TEXT
+);
