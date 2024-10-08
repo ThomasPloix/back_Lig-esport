@@ -32,6 +32,7 @@ public class Team {
     private List<Player> players =  new ArrayList<>();
 
     @ManyToMany(mappedBy = "teams_compete")
+    @JsonIgnore
     private List<Compete> competes;
 
     @ManyToOne

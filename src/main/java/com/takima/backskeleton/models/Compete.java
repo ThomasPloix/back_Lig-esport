@@ -16,17 +16,17 @@ public class Compete {
     @Column(name = "name")
     private String name;
 
-    @JsonIgnore
     @ManyToMany
     @JoinTable(
             name = "team_compete",
             joinColumns = @JoinColumn(name = "team_id"),
             inverseJoinColumns = @JoinColumn(name = "compete_id"))
     private List<Team> teams_compete;
-    @JsonIgnore
-    @OneToMany
+
+    @OneToMany(mappedBy = "compete")
     private List<Match> matches;
     @JsonIgnore
     @ManyToOne
+    @JoinColumn(name="region_id", nullable=false)
     private Region region;
 }
