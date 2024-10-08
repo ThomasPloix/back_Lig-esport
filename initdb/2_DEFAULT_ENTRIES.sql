@@ -41,3 +41,7 @@ INSERT INTO players (id, first_name, last_name, pseudo, team_id, image) VALUES (
 INSERT INTO players (id, first_name, last_name, pseudo, team_id, image) VALUES (3, 'Ryu', 'Min-seok', 'Keria', 2, 'https://commons.wikimedia.org/wiki/File:Keria_T1_2021.jpg?uselang=fr');
 INSERT INTO players (id, first_name, last_name, pseudo, team_id, image) VALUES (4, 'Lee', 'Sang-hyeok', 'Faker', 2, 'https://commons.wikimedia.org/wiki/File:Faker_T1_2021.jpg?uselang=fr');
 Insert Into players (id, first_name, last_name, pseudo, team_id, image) VALUES (5, 'Yasin', 'Dinçer', 'Nisqy', 3, 'https://commons.wikimedia.org/wiki/File:Nisqy_Cloud9_2021.jpg?uselang=fr');
+
+INSERT INTO team_compete (id, team_id, compete_id) VALUES (1, 1, 1);
+INSERT INTO team_compete (id, team_id, compete_id) VALUES (2, 2, 2);
+INSERT INTO team_compete (id, team_id, compete_id) VALUES (3, 3, 3);
