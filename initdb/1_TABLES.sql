@@ -77,9 +77,11 @@ create table team_compete
 create table matchs
 (
     id SERIAL PRIMARY KEY,
+    date date not null,
     team1_id int not null,
     team2_id int not null,
     result boolean,
     score TEXT not null,
+    compete_id int not null,
     joueur_id int not null
 )

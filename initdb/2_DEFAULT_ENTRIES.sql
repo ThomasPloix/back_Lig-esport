@@ -45,3 +45,5 @@ Insert Into players (id, first_name, last_name, pseudo, team_id, image) VALUES (
 INSERT INTO team_compete (id, team_id, compete_id) VALUES (1, 1, 1);
 INSERT INTO team_compete (id, team_id, compete_id) VALUES (2, 2, 2);
 INSERT INTO team_compete (id, team_id, compete_id) VALUES (3, 3, 3);
+
+INSERT INTO matchs (id, date, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (1, '2024-08-01', 3, 2, false, '23-6', 1, 3);

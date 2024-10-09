@@ -21,4 +21,6 @@ public class Region {
     private String logo;
     @OneToMany(mappedBy = "region")
     private List<Team> teams;
+    @OneToMany(mappedBy = "region")
+    private List<Compete> competitions;
 }
