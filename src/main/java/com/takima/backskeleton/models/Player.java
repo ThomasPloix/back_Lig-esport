@@ -6,6 +6,8 @@ import io.swagger.v3.oas.annotations.tags.Tags;
 import jakarta.persistence.*;
 import lombok.Getter;
 
+import java.util.List;
+
 @Entity
 @Table(name = "players")
 @Getter
@@ -20,11 +22,20 @@ public class Player {
     private String lastName;
     @Column(name = "pseudo")
     private String pseudo;
+    @Column(name = "role")
+    private String role;
+    @ManyToMany
+    @JoinTable(
+            name = "player_champion",
+            joinColumns = @JoinColumn(name = "player_id"),
+            inverseJoinColumns = @JoinColumn(name = "champion_id"))
+    private List<Champion> champion_prefs;
     @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "team_id", referencedColumnName = "id")
     @JsonIgnore
     private Team team;
     //private Long player_team_id = team.getId();
+
 
     private Player(Builder builder) {
         this.id = builder.id;
@@ -32,15 +43,19 @@ public class Player {
         this.lastName = builder.lastName;
         this.pseudo = builder.pseudo;
         this.team = builder.team;
+        this.role = builder.role;
+        this.champion_prefs = builder.champion_prefs;
     }
     public Player() {
     }
 
     public static class Builder {
+        public List<Champion> champion_prefs;
         private Long id;
         private String firstName;
         private String lastName;
         private String pseudo;
+        private String role;
         private Team team;
 
         public Builder id (Long id) {
@@ -62,6 +77,14 @@ public class Player {
         }
         public Builder team(Team team) {
             this.team = team;
+            return this;
+        }
+        public Builder role(String role) {
+            this.role = role;
+            return this;
+        }
+        public Builder champion_prefs(List<Champion> champion_prefs) {
+            this.champion_prefs = champion_prefs;
             return this;
         }
 

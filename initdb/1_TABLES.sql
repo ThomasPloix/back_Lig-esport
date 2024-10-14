@@ -56,6 +56,7 @@ create table players
     first_name TEXT not null,
     last_name TEXT not null,
     pseudo TEXT not null,
+    role TEXT not null,
     team_id int not null,
     image TEXT
 );
@@ -84,4 +85,28 @@ create table matchs
     score TEXT not null,
     compete_id int not null,
     joueur_id int not null
-)
+);
+
+create table champions
+(
+    id SERIAL PRIMARY KEY,
+    name TEXT not null,
+    title TEXT NOT NULL,
+    lore TEXT NOT NULL,
+    tags TEXT NOT NULL
+);
+
+create table player_champion
+(
+    id SERIAL PRIMARY KEY,
+    player_id int not null,
+    champion_id int not null
+);
+
+create table match_champion
+(
+    id SERIAL PRIMARY KEY,
+    match_id int not null,
+    champion_id int not null
+);
+

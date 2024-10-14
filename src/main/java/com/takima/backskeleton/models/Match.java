@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "matchs")
@@ -25,6 +26,12 @@ public class Match {
     private boolean result;
     @Column(name = "score")
     private String score;
+    @ManyToMany
+    @JoinTable(
+            name = "match_champion",
+            joinColumns = @JoinColumn(name = "match_id"),
+            inverseJoinColumns = @JoinColumn(name = "champion_id"))
+    private List<Champion> champions_picked;
     @JsonIgnore
     @ManyToOne
     @JoinColumn(name="compete_id", nullable=false)
