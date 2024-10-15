@@ -1,6 +1,7 @@
 package com.takima.backskeleton.services;
 
 import com.takima.backskeleton.DAO.TeamDao;
+import com.takima.backskeleton.models.Compete;
 import com.takima.backskeleton.models.Player;
 import com.takima.backskeleton.models.Team;
 import lombok.RequiredArgsConstructor;
@@ -24,6 +25,10 @@ public class TeamService {
 
     public List<Player> getPlayersOfTeam(Long id) {
         return teamDao.getAllPlayersFromTeam(id);
+    }
+
+    public Team createTeam(Team team) {
+        return teamDao.save(team);
     }
 
 

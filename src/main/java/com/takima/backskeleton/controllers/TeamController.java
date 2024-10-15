@@ -1,6 +1,7 @@
 package com.takima.backskeleton.controllers;
 
 
+import com.takima.backskeleton.models.Compete;
 import com.takima.backskeleton.models.Player;
 import com.takima.backskeleton.models.Team;
 import com.takima.backskeleton.services.TeamService;
@@ -9,8 +10,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin
-@RequestMapping("teams")
+@CrossOrigin (origins = "http://localhost:4200")
+@RequestMapping("team")
 @RestController
 @RequiredArgsConstructor
 public class TeamController {
@@ -30,4 +31,12 @@ public class TeamController {
     public List<Player> getPlayersOfTeam(@PathVariable Long id) {
         return teamService.getPlayersOfTeam(id);
     }
+
+    @CrossOrigin (origins = "http://localhost:4200")
+    @PostMapping("")
+    public Team createTeam(@RequestBody Team team) {
+        System.out.println(team);
+        return teamService.createTeam(team);
+    }
+
 }
