@@ -2,6 +2,11 @@ INSERT INTO regions (id, name, description, logo) VALUES (1, 'LEC', 'League of L
 INSERT INTO regions (id, name, description, logo) VALUES (2, 'LCK', 'League of Legends EMEA Championship, Europe', 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/League_of_Legends_Champions_Korea_logo.svg/330px-League_of_Legends_Champions_Korea_logo.svg.png');
 INSERT INTO regions (id, name, description, logo) VALUES (3, 'LPL', 'League of Legends Pro League, Chine', 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/League_of_legends_pro_league_logo.svg/330px-League_of_legends_pro_league_logo.svg.png');
 INSERT INTO regions (id, name, description, logo) VALUES (4, 'LCS', 'League Championship Series, Amérique', 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/League_championship_series_logo_2021.svg/375px-League_championship_series_logo_2021.svg.png');
+INSERT INTO regions (id, name, description, logo) VALUES (5, 'LCS2', 'League Championship Series, Amérique', 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/League_championship_series_logo_2021.svg/375px-League_championship_series_logo_2021.svg.png');
+INSERT INTO regions (id, name, description, logo) VALUES (6, 'LCS3', 'League Championship Series, Amérique', 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/League_championship_series_logo_2021.svg/375px-League_championship_series_logo_2021.svg.png');
+
+
+
 
 INSERT INTO competes (id, name, region_id) VALUES (1, 'LEC SUMMER 2024', 1);
 INSERT INTO competes (id, name, region_id) VALUES (2, 'LCK SUMMER 2024', 2);
@@ -9,17 +14,24 @@ INSERT INTO competes (id, name, region_id) VALUES (3, 'LPL SUMMER 2024', 3);
 INSERT INTO competes (id, name, region_id) VALUES (4, 'LCS SUMMER 2024', 4);
 
 INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (1, 'G2', 'Le sang', 'https://upload.wikimedia.org/wikipedia/fr/thumb/e/e4/G2_Esports.svg/langfr-800px-G2_Esports.svg.png', '2021-01-01', 'Berlin', 'Microsoft, Google', 1);
+INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (4, 'Fnatic', 'Le coeur', 'https://upload.wikimedia.org/wikipedia/fr/thumb/f/f4/Fnatic-Logo-2020.svg/langfr-1280px-Fnatic-Logo-2020.svg.png', '2021-01-01', 'Londres', 'Facebook, Twitter', 1);
+INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (6, 'Rogue', 'La sueur', 'https://upload.wikimedia.org/wikipedia/fr/thumb/7/7c/Rogue_Primary_Logo_v1.png/390px-Rogue_Primary_Logo_v1.png', '2021-01-01', 'Séoul', 'Samsung, LG', 1);
+INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (13, 'Vitality', 'La sueur', 'https://upload.wikimedia.org/wikipedia/en/thumb/4/49/Team_Vitality_logo.svg/198px-Team_Vitality_logo.svg.png', '2021-01-01', 'Paris', 'JBL, GG.BET, ALDI', 1);
+INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (14, 'Karmine Corp', 'Blue Blue Blue', 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Karmine_Corp_logo.svg/240px-Karmine_Corp_logo.svg.png', '2021-01-01', 'Paris', 'Orange, Michelin, Red Bull', 1);
+INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (15, 'MAD Lions', 'Shakira', 'https://upload.wikimedia.org/wikipedia/en/thumb/8/84/MAD_Lions_logo.svg/215px-MAD_Lions_logo.svg.png', '2021-01-01', 'Barcelona', 'Orange, Tres, FCB', 1);
+INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (16, 'SK Gaming', 'Yahoo', 'https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/SK_Gaming_logo.svg/240px-SK_Gaming_logo.svg.png', '2021-01-01', 'Berlin', 'Green, Ekwateur, Kro', 1);
+
+
+
 INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (2, 'T1', 'La sueur', 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/T1_esports_logo.svg/640px-T1_esports_logo.svg.png', '2021-01-01', 'Séoul', 'Samsung, LG', 2);
 INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (3, 'Cloud9', 'Les larmes', 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Cloud9_logo_c._2023.svg/640px-Cloud9_logo_c._2023.svg.png', '2021-01-01', 'Los Angeles', 'Apple, Amazon', 4);
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (4, 'Fnatic', 'Le coeur', 'https://upload.wikimedia.org/wikipedia/fr/thumb/f/f4/Fnatic-Logo-2020.svg/langfr-1280px-Fnatic-Logo-2020.svg.png', '2021-01-01', 'Londres', 'Facebook, Twitter', 1);
 INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (5, 'TSM', 'Le sang', 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/TSM_Logo.svg/langfr-390px-TSM_Logo.svg.png', '2021-01-01', 'Los Angeles', 'Microsoft, Google', 4);
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (6, 'Rogue', 'La sueur', 'https://upload.wikimedia.org/wikipedia/fr/thumb/7/7c/Rogue_Primary_Logo_v1.png/390px-Rogue_Primary_Logo_v1.png', '2021-01-01', 'Séoul', 'Samsung, LG', 1);
 INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (7, '100 Thieves', 'Les larmes', 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/100_Thieves_logo.svg/330px-100_Thieves_logo.svg.png', '2021-01-01', 'Los Angeles', 'Apple, Amazon', 4);
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (8, 'Damwon Kia', 'La force', 'https://upload.wikimedia.org/wikipedia/en/thumb/4/4e/EDward_Gaming_logo.svg/330px-EDward_Gaming_logo.svg.png', '2021-01-01', 'Seoul', 'Kia', 2);
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (9, 'Royal Never Give Up', 'La persévérance', 'https://upload.wikimedia.org/wikipedia/en/thumb/7/7e/Royal_Never_Give_Up_logo.svg/330px-Royal_Never_Give_Up_logo.svg.png', '2021-01-01', 'Beijing', 'JD.com, KFC', 3);
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (10, 'Top Esports', 'L élite', 'https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Top_Esports_logo.svg/330px-Top_Esports_logo.svg.png', '2021-01-01', 'Shanghai', 'Nike, Red Bull', 3);
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (11, 'FunPlus Phoenix', 'Le phénix', 'https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/FunPlus_Phoenix_logo.svg/330px-FunPlus_Phoenix_logo.svg.png', '2021-01-01', 'Beijing', 'Lenovo, Douyu', 3);
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (12, 'Invictus Gaming', 'Les invincibles', 'https://upload.wikimedia.org/wikipedia/en/thumb/1/1e/Invictus_Gaming_logo.svg/330px-Invictus_Gaming_logo.svg.png', '2021-01-01', 'Shanghai', 'Razer, Intel', 3);
+INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (8, 'Damwon Kia', 'La force', 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/DPlus_KIA_Logo.svg/320px-DPlus_KIA_Logo.svg.png', '2021-01-01', 'Seoul', 'Kia', 2);
+INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (9, 'Royal Never Give Up', 'La persévérance', 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/RNG_logo.svg/320px-RNG_logo.svg.png', '2021-01-01', 'Beijing', 'JD.com, KFC', 3);
+INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (10, 'Top Esports', 'L élite', 'https://upload.wikimedia.org/wikipedia/en/a/ac/Top_Esports_logo.png', '2021-01-01', 'Shanghai', 'Nike, Red Bull', 3);
+INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (11, 'FunPlus Phoenix', 'Le phénix', 'https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/FPX_Esports_logo.svg/320px-FPX_Esports_logo.svg.png', '2021-01-01', 'Beijing', 'Lenovo, Douyu', 3);
+INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (12, 'Invictus Gaming', 'Les invincibles', 'https://upload.wikimedia.org/wikipedia/en/1/1f/Invictus_Gaming_logo.png', '2021-01-01', 'Shanghai', 'Razer, Intel', 3);
 
 INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (1, 'Rasmus', 'Winther', 'Caps', 'MID',1, 'https://commons.wikimedia.org/wiki/File:Caps_G2_2020_(1).jpg?uselang=fr');
 INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (2, 'Martin', 'Larsson', 'Rekkles', 'ADC', 1, 'https://commons.wikimedia.org/wiki/File:Rekkles_G2_2021.jpg?uselang=fr');
