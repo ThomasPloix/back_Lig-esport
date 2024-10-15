@@ -19,8 +19,8 @@ public class Compete {
     @ManyToMany
     @JoinTable(
             name = "team_compete",
-            joinColumns = @JoinColumn(name = "team_id"),
-            inverseJoinColumns = @JoinColumn(name = "compete_id"))
+            joinColumns = @JoinColumn(name = "compete_id"),
+            inverseJoinColumns = @JoinColumn(name = "team_id"))
     private List<Team> teams_compete;
 
     @OneToMany(mappedBy = "compete")

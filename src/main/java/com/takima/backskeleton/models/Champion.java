@@ -1,5 +1,6 @@
 package com.takima.backskeleton.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
 
@@ -14,6 +15,7 @@ public class Champion {
     private String name;
     @Column(name = "title")
     private String title;
+    @JsonIgnore
     @Column(name = "lore")
     private String lore;
     @Column(name = "tags")
