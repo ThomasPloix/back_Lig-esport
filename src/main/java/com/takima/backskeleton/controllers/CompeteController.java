@@ -1,6 +1,7 @@
 package com.takima.backskeleton.controllers;
 
 
+import com.takima.backskeleton.DTO.CompeteDto;
 import com.takima.backskeleton.models.Compete;
 import com.takima.backskeleton.models.Team;
 import com.takima.backskeleton.services.CompeteService;
@@ -29,9 +30,9 @@ public class CompeteController {
 
     @CrossOrigin
     @PostMapping("")
-    public Compete createCompete(@RequestBody Compete compete) {
-        System.out.println(compete);
-        return competeService.createCompete(compete);
+    public Compete createCompete(@RequestBody CompeteDto competeDto) {
+        System.out.println("COMPETE:  "+  competeDto.toString());
+        return competeService.addCompete(competeDto);
     }
 
 //    @GetMapping("/{competeId}/teams")

@@ -16,6 +16,8 @@ public class Match {
     private Long id;
     @Column(name = "date")
     private Date date;
+    @Column(name = "order_match")
+    private int order_match;
     @ManyToOne
     @JoinColumn(name="team1_id", nullable=false)
     private Team team1;

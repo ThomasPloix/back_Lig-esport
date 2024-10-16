@@ -1,6 +1,7 @@
 package com.takima.backskeleton.controllers;
 
 
+import com.takima.backskeleton.DTO.TeamDto;
 import com.takima.backskeleton.models.Compete;
 import com.takima.backskeleton.models.Player;
 import com.takima.backskeleton.models.Team;
@@ -23,7 +24,7 @@ public class TeamController {
     }
 
     @GetMapping("/{id}")
-    public Team getTeamById(@PathVariable Long id) {
+    public TeamDto getTeamById(@PathVariable Long id) {
         return teamService.getById(id);
     }
 
@@ -34,7 +35,7 @@ public class TeamController {
 
     @CrossOrigin (origins = "http://localhost:4200")
     @PostMapping("")
-    public Team createTeam(@RequestBody Team team) {
+    public Team createTeam(@RequestBody TeamDto team) {
         System.out.println(team);
         return teamService.createTeam(team);
     }

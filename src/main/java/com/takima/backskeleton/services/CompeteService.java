@@ -1,9 +1,13 @@
 package com.takima.backskeleton.services;
 import com.takima.backskeleton.DAO.CompeteDao;
+import com.takima.backskeleton.DTO.CompeteDto;
+import com.takima.backskeleton.DTO.CompeteMapper;
 import com.takima.backskeleton.models.Compete;
+import com.takima.backskeleton.models.Region;
 import com.takima.backskeleton.models.Team;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -11,6 +15,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class CompeteService {
     private final CompeteDao competeDao;
+    private final RegionService regionService;
 
     public Compete getById(Long id){
         return competeDao.findById(id).orElseThrow();
@@ -19,7 +24,15 @@ public class CompeteService {
         return competeDao.findAll();
     }
 
-    public Compete createCompete(Compete compete) {
+    @Transactional
+    public Compete addCompete(CompeteDto competeDto) {
+        Compete compete;
+        try {
+            Region region= regionService.getById(competeDto.getRegionId());
+            compete = CompeteMapper.fromDto(competeDto, null, region);
+        } catch (Exception e) {
+            throw new RuntimeException("Error with Compete", e);
+        }
         return competeDao.save(compete);
     }
 //    public List<Team> getAllTeamsFromCompete(Long teamId) {
