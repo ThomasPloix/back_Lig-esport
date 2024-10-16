@@ -259,16 +259,15 @@ INSERT INTO team_compete (id, team_id, compete_id) VALUES (8, 10, 3);
 INSERT INTO team_compete (id, team_id, compete_id) VALUES (9, 11, 3);
 INSERT INTO team_compete (id, team_id, compete_id) VALUES (10, 12, 3);
 
-INSERT INTO matchs (id, date, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (1, '2024-08-01', 1, 6, false, '23-6', 1, 1);
-INSERT INTO matchs (id, date, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (2, '2024-03-01', 1, 4, false, '15-12', 1, 2);
-INSERT INTO matchs (id, date, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (4, '2024-09-01', 2, 8, true, '19-28', 2, 13);
-INSERT INTO matchs (id, date, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (5, '2024-02-01', 2, 8, true, '19-28', 2, 4);
-INSERT INTO matchs (id, date, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (7, '2024-06-01', 9, 12, true, '2-10', 3, 7);
-INSERT INTO matchs (id, date, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (8, '2024-06-01', 10, 11, true, '13-10', 3, 11);
-INSERT INTO matchs (id, date, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (9, '2024-06-01', 11, 9, false, '20-5', 3, 8);
-INSERT INTO matchs (id, date, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (10, '2024-06-01', 12, 10, false, '22-10', 3, 11);
-INSERT INTO matchs (id, date, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (11, '2024-06-01', 12, 11, false, '13-4', 3, 11);
-INSERT INTO matchs (id, date, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (6, '2024-08-01', 5, 7, true, '22-25', 4, 5);
+INSERT INTO matchs (id, date,order_match, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (2, '2024-03-01',1, 1, 4, false, '15-12', 1, 2);
+INSERT INTO matchs (id, date,order_match, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (4, '2024-09-01',1, 2, 8, true, '19-28', 2, 13);
+INSERT INTO matchs (id, date,order_match, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (5, '2024-02-01',2, 2, 8, true, '19-28', 2, 4);
+INSERT INTO matchs (id, date,order_match, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (7, '2024-06-01',1, 9, 12, true, '2-10', 3, 7);
+INSERT INTO matchs (id, date,order_match, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (8, '2024-06-01',2, 10, 11, true, '13-10', 3, 11);
+INSERT INTO matchs (id, date,order_match, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (9, '2024-06-01',3, 11, 9, false, '20-5', 3, 8);
+INSERT INTO matchs (id, date,order_match, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (10, '2024-06-01',4, 12, 10, false, '22-10', 3, 11);
+INSERT INTO matchs (id, date,order_match, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (11, '2024-06-01',5, 12, 11, false, '13-4', 3, 11);
+INSERT INTO matchs (id, date,order_match, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (6, '2024-08-01',1, 5, 7, true, '22-25', 4, 5);
 
 INSERT INTO champions (id, name, title, lore, tags) VALUES
     (1,	'Annie',	'the Dark Child',	'In the time shortly before the League, there were those within the sinister city-state of Noxus who did not agree with the evils perpetrated by the Noxian High Command. The High Command had just put down a coup attempt from the self-proclaimed Crown Prince Raschallion, and a crack down on any form of dissent against the new government was underway. These political and social outcasts, known as the Gray Order, sought to leave their neighbors in peace as they pursued dark arcane knowledge. The leaders of this outcast society were a married couple: Gregori Hastur, the Gray Warlock, and his wife Amoline, the Shadow Witch. Together they led an exodus of magicians and other intelligentsia from Noxus, resettling their followers beyond the Great Barrier to the northern reaches of the unforgiving Voodoo Lands. Though survival was a challenge at times, the Gray Orders colony managed to thrive in a land where so many others would have failed.Years after the exodus, Gregori and Amoline had a child: Annie. Early on, Annies parents knew there was something special about their daughter. At the age of two, Annie miraculously ensorcelled a shadow bear - a ferocious denizen of the petrified forests outside the colony - turning it into her pet. To this day she keeps her bear Tibbers by her side, often keeping him spellbound as a stuffed doll to be carried like a childs toy. The combination of Annies lineage and the dark magic of her birthplace have given this little girl tremendous arcane power. It is this same girl who now finds herself as one of the most sought-after champions within the League of Legends - even by the city-state that would have exiled her parents had they not fled beforehand.Annie may be one of the most powerful champions ever to have fought in a Field of Justice. I shudder to think of her capabilities when she becomes an adult.-- High Councilor Kiersta Mandrake',	'mage,ranged,recommended'),

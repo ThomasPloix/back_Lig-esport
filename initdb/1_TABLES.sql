@@ -79,6 +79,7 @@ create table matchs
 (
     id SERIAL PRIMARY KEY,
     date date not null,
+    order_match int not null,
     team1_id int not null,
     team2_id int not null,
     result boolean,
