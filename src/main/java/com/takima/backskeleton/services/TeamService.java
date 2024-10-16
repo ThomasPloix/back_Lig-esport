@@ -22,7 +22,6 @@ public class TeamService {
     private final RegionService regionService;
 
     public TeamDto getById(Long id) {
-
             Team team = teamDao.findById(id).orElseThrow();
         return TeamMapper.toDto(team);
     }

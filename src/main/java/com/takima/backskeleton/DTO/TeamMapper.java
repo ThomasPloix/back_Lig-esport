@@ -11,13 +11,14 @@ public class TeamMapper {
 
     public static Team fromDto(TeamDto dto, Long id, Region region) {
         return new Team.Builder()
-                .id(21L)
+                .id(id)
                 .name(dto.getName())
                 .description(dto.getDescription())
                 .logo(dto.getLogo())
                 .date_creation(new Date())
                 .lieu(dto.getLieu())
                 .partners(dto.getPartners())
+                .players(dto.getPlayers())
                 .region(region)
                 .build();
     }
@@ -30,6 +31,7 @@ public class TeamMapper {
                 .creation_date(DateFormat.getDateInstance().format(team.getCreation_date()))
                 .lieu(team.getLieu())
                 .partners(team.getPartners())
+                .players(team.getPlayers())
                 .region_id(team.getRegion().getId())
                 .build();
     }

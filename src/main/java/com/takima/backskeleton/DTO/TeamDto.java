@@ -1,9 +1,11 @@
 package com.takima.backskeleton.DTO;
 
+import com.takima.backskeleton.models.Player;
 import lombok.Builder;
 import lombok.Getter;
 
 import java.util.Date;
+import java.util.List;
 
 @Builder
 @Getter
@@ -13,7 +15,7 @@ public class TeamDto {
     private String logo;
     private String partners;
     private String creation_date;
-    private PlayerDto[] players;
+    private List<Player> players;
     private String lieu;
     private Long region_id;
 
