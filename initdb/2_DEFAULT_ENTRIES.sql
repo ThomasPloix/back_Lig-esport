@@ -1,122 +1,122 @@
-INSERT INTO regions (id, name, description, logo) VALUES (1, 'LEC', 'League of Legends Champions Korea', '/assets/region/League_of_Legends_EMEA_Championship.png');
-INSERT INTO regions (id, name, description, logo) VALUES (2, 'LCK', 'League of Legends EMEA Championship, Europe', '/assets/region/League_of_Legends_Champions_Korea_logo.svg.png');
-INSERT INTO regions (id, name, description, logo) VALUES (3, 'LPL', 'League of Legends Pro League, Chine', '/assets/region/League_of_legends_pro_league_logo.svg.png');
-INSERT INTO regions (id, name, description, logo) VALUES (4, 'LCS', 'League Championship Series, Amérique', '/assets/region/League_championship_series_logo.svg.png');
-INSERT INTO regions (id, name, description, logo) VALUES (5, 'LFL', 'Ligue française de League of Legends', '/assets/region/LFL-Logo.svg.png');
-INSERT INTO regions (id, name, description, logo) VALUES (6, 'CBLOL', 'Campeonato Brasileiro de League of Legends, Brésil', '/assets/region/CBLOL_logo.png');
+INSERT INTO regions (name, description, logo) VALUES ('LEC', 'League of Legends Champions Korea', '/assets/region/League_of_Legends_EMEA_Championship.png');
+INSERT INTO regions (name, description, logo) VALUES ('LCK', 'League of Legends EMEA Championship, Europe', '/assets/region/League_of_Legends_Champions_Korea_logo.svg.png');
+INSERT INTO regions (name, description, logo) VALUES ('LPL', 'League of Legends Pro League, Chine', '/assets/region/League_of_legends_pro_league_logo.svg.png');
+INSERT INTO regions (name, description, logo) VALUES ('LCS', 'League Championship Series, Amérique', '/assets/region/League_championship_series_logo.svg.png');
+INSERT INTO regions (name, description, logo) VALUES ('LFL', 'Ligue française de League of Legends', '/assets/region/LFL-Logo.svg.png');
+INSERT INTO regions (name, description, logo) VALUES ('CBLOL', 'Campeonato Brasileiro de League of Legends, Brésil', '/assets/region/CBLOL_logo.png');
 
 
-INSERT INTO competes (id, name, region_id) VALUES (1, 'LEC SUMMER 2024', 1);
-INSERT INTO competes (id, name, region_id) VALUES (2, 'LCK SUMMER 2024', 2);
-INSERT INTO competes (id, name, region_id) VALUES (3, 'LPL SUMMER 2024', 3);
-INSERT INTO competes (id, name, region_id) VALUES (4, 'LCS SUMMER 2024', 4);
+INSERT INTO competes (name, region_id) VALUES ('LEC SUMMER 2024', 1);
+INSERT INTO competes (name, region_id) VALUES ('LCK SUMMER 2024', 2);
+INSERT INTO competes (name, region_id) VALUES ('LPL SUMMER 2024', 3);
+INSERT INTO competes (name, region_id) VALUES ('LCS SUMMER 2024', 4);
 
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (1, 'G2', 'Le sang', '/assets/teams/G2_Esports.svg.png', '2021-01-01', 'Berlin', 'Microsoft, Google', 1);
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (4, 'Fnatic', 'Le coeur', '/assets/teams/Fnatic.svg.png', '2021-01-01', 'Londres', 'Facebook, Twitter', 1);
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (6, 'Rogue', 'La sueur', '/assets/teams/Rogue.png', '2021-01-01', 'Séoul', 'Samsung, LG', 1);
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (13, 'Vitality', 'La sueur', '/assets/teams/Team_Vitality_logo.svg.png', '2021-01-01', 'Paris', 'JBL, GG.BET, ALDI', 1);
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (14, 'Karmine Corp', 'Blue Blue Blue', '/assets/teams/Karmine_Corp_logo.svg.png', '2021-01-01', 'Paris', 'Orange, Michelin, Red Bull', 1);
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (15, 'MAD Lions', 'Shakira', '/assets/teams/MAD_Lions_logo.svg.png', '2021-01-01', 'Barcelona', 'Orange, Tres, FCB', 1);
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (16, 'SK Gaming', 'Yahoo', '/assets/teams/SK_logo.svg.png', '2021-01-01', 'Berlin', 'Green, Ekwateur, Kro', 1);
+INSERT INTO teams (name, description, logo, date_created, lieu, partners, region_id) VALUES ('G2', 'Le sang', '/assets/teams/G2_Esports.svg.png', '2021-01-01', 'Berlin', 'Microsoft, Google', 1);
+INSERT INTO teams (name, description, logo, date_created, lieu, partners, region_id) VALUES ('Fnatic', 'Le coeur', '/assets/teams/Fnatic.svg.png', '2021-01-01', 'Londres', 'Facebook, Twitter', 1);
+INSERT INTO teams (name, description, logo, date_created, lieu, partners, region_id) VALUES ('Rogue', 'La sueur', '/assets/teams/Rogue.png', '2021-01-01', 'Séoul', 'Samsung, LG', 1);
+INSERT INTO teams (name, description, logo, date_created, lieu, partners, region_id) VALUES ( 'Vitality', 'La sueur', '/assets/teams/Team_Vitality_logo.svg.png', '2021-01-01', 'Paris', 'JBL, GG.BET, ALDI', 1);
+INSERT INTO teams (name, description, logo, date_created, lieu, partners, region_id) VALUES ( 'Karmine Corp', 'Blue Blue Blue', '/assets/teams/Karmine_Corp_logo.svg.png', '2021-01-01', 'Paris', 'Orange, Michelin, Red Bull', 1);
+INSERT INTO teams (name, description, logo, date_created, lieu, partners, region_id) VALUES ( 'MAD Lions', 'Shakira', '/assets/teams/MAD_Lions_logo.svg.png', '2021-01-01', 'Barcelona', 'Orange, Tres, FCB', 1);
+INSERT INTO teams (name, description, logo, date_created, lieu, partners, region_id) VALUES ( 'SK Gaming', 'Yahoo', '/assets/teams/SK_logo.svg.png', '2021-01-01', 'Berlin', 'Green, Ekwateur, Kro', 1);
 
 
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (2, 'T1', 'La sueur', '/assets/teams/T1_logo.svg.png', '2021-01-01', 'Séoul', 'Samsung, LG', 2);
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (8, 'Damwon Kia', 'La force', '/assets/teams/DPlusKIA_Logo.svg.png', '2021-01-01', 'Seoul', 'Kia', 2);
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (17, 'Gen.G', 'La jeunesse', '/assets/teams/GenG_Logo.svg.png', '2021-01-01', 'Séoul', 'Samsung, LG', 2);
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (18, 'KT Rolster', 'La douleur', '/assets/teams/KT_Rolster_logo.png', '2021-01-01', 'Séoul', 'Samsung, LG', 2);
+INSERT INTO teams (name, description, logo, date_created, lieu, partners, region_id) VALUES ('T1', 'La sueur', '/assets/teams/T1_logo.svg.png', '2021-01-01', 'Séoul', 'Samsung, LG', 2);
+INSERT INTO teams (name, description, logo, date_created, lieu, partners, region_id) VALUES ('Damwon Kia', 'La force', '/assets/teams/DPlusKIA_Logo.svg.png', '2021-01-01', 'Seoul', 'Kia', 2);
+INSERT INTO teams (name, description, logo, date_created, lieu, partners, region_id) VALUES ( 'Gen.G', 'La jeunesse', '/assets/teams/GenG_Logo.svg.png', '2021-01-01', 'Séoul', 'Samsung, LG', 2);
+INSERT INTO teams (name, description, logo, date_created, lieu, partners, region_id) VALUES ( 'KT Rolster', 'La douleur', '/assets/teams/KT_Rolster_logo.png', '2021-01-01', 'Séoul', 'Samsung, LG', 2);
 
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (3, 'Cloud9', 'Les larmes', '/assets/teams/Cloud9_logo.svg.png', '2021-01-01', 'Los Angeles', 'Apple, Amazon', 4);
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (5, 'TSM', 'Le sang', '/assets/teams/TSM_logo.svg.png', '2021-01-01', 'Los Angeles', 'Microsoft, Google', 4);
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (7, '100 Thieves', 'Les larmes', '/assets/teams/100_Thieves_logo.svg.png', '2021-01-01', 'Los Angeles', 'Apple, Amazon', 4);
+INSERT INTO teams (name, description, logo, date_created, lieu, partners, region_id) VALUES ('Cloud9', 'Les larmes', '/assets/teams/Cloud9_logo.svg.png', '2021-01-01', 'Los Angeles', 'Apple, Amazon', 4);
+INSERT INTO teams (name, description, logo, date_created, lieu, partners, region_id) VALUES ('TSM', 'Le sang', '/assets/teams/TSM_logo.svg.png', '2021-01-01', 'Los Angeles', 'Microsoft, Google', 4);
+INSERT INTO teams (name, description, logo, date_created, lieu, partners, region_id) VALUES ('100 Thieves', 'Les larmes', '/assets/teams/100_Thieves_logo.svg.png', '2021-01-01', 'Los Angeles', 'Apple, Amazon', 4);
 
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (9, 'Royal Never Give Up', 'La persévérance', '/assets/teams/RNG_logo.svg.png', '2021-01-01', 'Beijing', 'JD.com, KFC', 3);
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (10, 'Top Esports', 'L élite', '/assets/teams/Top_Esports_logo.png', '2021-01-01', 'Shanghai', 'Nike, Red Bull', 3);
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (11, 'FunPlus Phoenix', 'Le phénix', '/assets/teams/FPX_Esports_logo.svg.png', '2021-01-01', 'Beijing', 'Lenovo, Douyu', 3);
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (12, 'Invictus Gaming', 'Les invincibles', '/assets/teams/Invictus_Gaming_logo.png', '2021-01-01', 'Shanghai', 'Razer, Intel', 3);
+INSERT INTO teams (name, description, logo, date_created, lieu, partners, region_id) VALUES ('Royal Never Give Up', 'La persévérance', '/assets/teams/RNG_logo.svg.png', '2021-01-01', 'Beijing', 'JD.com, KFC', 3);
+INSERT INTO teams (name, description, logo, date_created, lieu, partners, region_id) VALUES ( 'Top Esports', 'L élite', '/assets/teams/Top_Esports_logo.png', '2021-01-01', 'Shanghai', 'Nike, Red Bull', 3);
+INSERT INTO teams (name, description, logo, date_created, lieu, partners, region_id) VALUES ( 'FunPlus Phoenix', 'Le phénix', '/assets/teams/FPX_Esports_logo.svg.png', '2021-01-01', 'Beijing', 'Lenovo, Douyu', 3);
+INSERT INTO teams (name, description, logo, date_created, lieu, partners, region_id) VALUES ( 'Invictus Gaming', 'Les invincibles', '/assets/teams/Invictus_Gaming_logo.png', '2021-01-01', 'Shanghai', 'Razer, Intel', 3);
 
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (19, 'BDSA', 'La persévérance', '/assets/teams/Team_BDS_logo.png', '2021-01-01', 'Genève', 'JD.com, KFC', 5);
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (20, 'Karmine Corp Blue', 'L élite', '/assets/teams/Karmine_Corp_logo.svg.png', '2021-01-01', 'Paris', 'Nike, Red Bull', 5);
-INSERT INTO teams (id, name, description, logo, date_created, lieu, partners, region_id) VALUES (21, 'Team GO', 'Le phénix', '/assets/teams/Team_GO_logo.png', '2021-01-01', 'Paris', 'Lenovo, Douyu', 5);
+INSERT INTO teams (name, description, logo, date_created, lieu, partners, region_id) VALUES ( 'BDSA', 'La persévérance', '/assets/teams/Team_BDS_logo.png', '2021-01-01', 'Genève', 'JD.com, KFC', 5);
+INSERT INTO teams (name, description, logo, date_created, lieu, partners, region_id) VALUES ( 'Karmine Corp Blue', 'L élite', '/assets/teams/Karmine_Corp_logo.svg.png', '2021-01-01', 'Paris', 'Nike, Red Bull', 5);
+INSERT INTO teams (name, description, logo, date_created, lieu, partners, region_id) VALUES ( 'Team GO', 'Le phénix', '/assets/teams/Team_GO_logo.png', '2021-01-01', 'Paris', 'Lenovo, Douyu', 5);
 
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (1, 'Rasmus', 'Winther', 'Caps', 'MID',1, 'https://commons.wikimedia.org/wiki/File:Caps_G2_2020_(1).jpg?uselang=fr');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (2, 'Martin', 'Larsson', 'Rekkles', 'ADC', 1, 'https://commons.wikimedia.org/wiki/File:Rekkles_G2_2021.jpg?uselang=fr');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (3, 'Ryu', 'Min-seok', 'Keria', 'SUPP',2, 'https://commons.wikimedia.org/wiki/File:Keria_T1_2021.jpg?uselang=fr');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (4, 'Lee', 'Sang-hyeok', 'Faker', 'MID', 2, 'https://commons.wikimedia.org/wiki/File:Faker_T1_2021.jpg?uselang=fr');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (5, 'Yasin', 'Dinçer', 'Nisqy', 'MID', 3, 'https://commons.wikimedia.org/wiki/File:Nisqy_Cloud9_2021.jpg?uselang=fr');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (6, 'Kim', 'Geon-bu', 'Canyon', 'JUNG', 2, 'https://example.com/canyon.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (7, 'Jang', 'Gyeong-hwan', 'Nuguri', 'TOP', 2, 'https://example.com/nuguri.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (8, 'Park', 'Jae-hyuk', 'Ruler', 'ADC', 3, 'https://example.com/ruler.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (9, 'Jo', 'Seong-jin', 'CoreJJ', 'SUPP', 3, 'https://example.com/corejj.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (10, 'Kim', 'Tae-min', 'Clid', 'JUNG', 4, 'https://example.com/clid.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (11, 'Jeong', 'Eon-yeong', 'Chovy', 'MID', 17, 'https://example.com/chovy.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (12, 'Kim', 'Hyuk-kyu', 'Deft', 'ADC', 2, 'https://example.com/deft.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (13, 'Lee', 'Dong-hyeon', 'ShowMaker', 'MID', 2, 'https://example.com/showmaker.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Rasmus', 'Winther', 'Caps', 'MID',1, 'https://commons.wikimedia.org/wiki/File:Caps_G2_2020_(1).jpg?uselang=fr');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Martin', 'Larsson', 'Rekkles', 'ADC', 1, 'https://commons.wikimedia.org/wiki/File:Rekkles_G2_2021.jpg?uselang=fr');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Ryu', 'Min-seok', 'Keria', 'SUPP',2, 'https://commons.wikimedia.org/wiki/File:Keria_T1_2021.jpg?uselang=fr');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Lee', 'Sang-hyeok', 'Faker', 'MID', 2, 'https://commons.wikimedia.org/wiki/File:Faker_T1_2021.jpg?uselang=fr');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Yasin', 'Dinçer', 'Nisqy', 'MID', 3, 'https://commons.wikimedia.org/wiki/File:Nisqy_Cloud9_2021.jpg?uselang=fr');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Kim', 'Geon-bu', 'Canyon', 'JUNG', 2, 'https://example.com/canyon.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Jang', 'Gyeong-hwan', 'Nuguri', 'TOP', 2, 'https://example.com/nuguri.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Park', 'Jae-hyuk', 'Ruler', 'ADC', 3, 'https://example.com/ruler.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Jo', 'Seong-jin', 'CoreJJ', 'SUPP', 3, 'https://example.com/corejj.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Kim', 'Tae-min', 'Clid', 'JUNG', 4, 'https://example.com/clid.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Jeong', 'Eon-yeong', 'Chovy', 'MID', 17, 'https://example.com/chovy.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Kim', 'Hyuk-kyu', 'Deft', 'ADC', 2, 'https://example.com/deft.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Lee', 'Dong-hyeon', 'ShowMaker', 'MID', 2, 'https://example.com/showmaker.jpg');
 
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (14, 'Bjergsen', 'Søren', 'Bjergsen', 'MID', 5, 'https://example.com/bjergsen.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (15, 'Doublelift', 'Yiliang', 'Doublelift', 'ADC', 5, 'https://example.com/doublelift.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (16, 'Biofrost', 'Vincent', 'Biofrost', 'SUPP', 5, 'https://example.com/biofrost.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (17, 'Spica', 'Mingyi', 'Spica', 'JUNG', 5, 'https://example.com/spica.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (18, 'Broken Blade', 'Sergen', 'Broken Blade', 'TOP', 5, 'https://example.com/brokenblade.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Bjergsen', 'Søren', 'Bjergsen', 'MID', 5, 'https://example.com/bjergsen.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Doublelift', 'Yiliang', 'Doublelift', 'ADC', 5, 'https://example.com/doublelift.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Biofrost', 'Vincent', 'Biofrost', 'SUPP', 5, 'https://example.com/biofrost.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Spica', 'Mingyi', 'Spica', 'JUNG', 5, 'https://example.com/spica.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Broken Blade', 'Sergen', 'Broken Blade', 'TOP', 5, 'https://example.com/brokenblade.jpg');
 
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (19, 'Fudge', 'Ibrahim', 'Fudge', 'TOP', 7, 'https://example.com/fudge.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (20, 'Blaber', 'Robert', 'Blaber', 'JUNG', 7, 'https://example.com/blaber.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (21, 'Perkz', 'Luka', 'Perkz', 'MID', 7, 'https://example.com/perkz.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (22, 'Zven', 'Jesper', 'Zven', 'ADC', 7, 'https://example.com/zven.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (23, 'Vulcan', 'Philippe', 'Vulcan', 'SUPP', 7, 'https://example.com/vulcan.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Fudge', 'Ibrahim', 'Fudge', 'TOP', 7, 'https://example.com/fudge.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Blaber', 'Robert', 'Blaber', 'JUNG', 7, 'https://example.com/blaber.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Perkz', 'Luka', 'Perkz', 'MID', 7, 'https://example.com/perkz.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Zven', 'Jesper', 'Zven', 'ADC', 7, 'https://example.com/zven.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Vulcan', 'Philippe', 'Vulcan', 'SUPP', 7, 'https://example.com/vulcan.jpg');
 
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (24, 'Nuguri', 'Jang', 'Nuguri', 'TOP', 8, 'https://example.com/nuguri.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (25, 'Canyon', 'Kim', 'Canyon', 'JUNG', 8, 'https://example.com/canyon.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (26, 'ShowMaker', 'Heo', 'ShowMaker', 'MID', 8, 'https://example.com/showmaker.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (27, 'Ghost', 'Jang', 'Ghost', 'ADC', 8, 'https://example.com/ghost.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (28, 'BeryL', 'Cho', 'BeryL', 'SUPP', 8, 'https://example.com/beryl.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Nuguri', 'Jang', 'Nuguri', 'TOP', 8, 'https://example.com/nuguri.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Canyon', 'Kim', 'Canyon', 'JUNG', 8, 'https://example.com/canyon.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('ShowMaker', 'Heo', 'ShowMaker', 'MID', 8, 'https://example.com/showmaker.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Ghost', 'Jang', 'Ghost', 'ADC', 8, 'https://example.com/ghost.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('BeryL', 'Cho', 'BeryL', 'SUPP', 8, 'https://example.com/beryl.jpg');
 
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (29, 'Jian', 'Zi-Hao', 'Uzi', 'ADC', 9, 'https://example.com/uzi.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (30, 'Li', 'Yuan-Hao', 'Xiaohu', 'MID', 9, 'https://example.com/xiaohu.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (31, 'Shi', 'Sen-Ming', 'Ming', 'SUPP', 9, 'https://example.com/ming.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (32, 'Yan', 'Jun-Ze', 'Wei', 'JUNG', 9, 'https://example.com/wei.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (33, 'Chen', 'Bo', 'Bin', 'TOP', 9, 'https://example.com/bin.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Jian', 'Zi-Hao', 'Uzi', 'ADC', 9, 'https://example.com/uzi.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Li', 'Yuan-Hao', 'Xiaohu', 'MID', 9, 'https://example.com/xiaohu.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Shi', 'Sen-Ming', 'Ming', 'SUPP', 9, 'https://example.com/ming.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Yan', 'Jun-Ze', 'Wei', 'JUNG', 9, 'https://example.com/wei.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Chen', 'Bo', 'Bin', 'TOP', 9, 'https://example.com/bin.jpg');
 
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (34, 'Yu', 'Wen-Bo', 'JackeyLove', 'ADC', 10, 'https://example.com/jackeylove.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (35, 'Zhuo', 'Ding', 'Knight', 'MID', 10, 'https://example.com/knight.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (36, 'Wang', 'Liu-Yi', 'Mark', 'SUPP', 10, 'https://example.com/mark.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (37, 'Hung', 'Hao-Hsuan', 'Karsa', 'JUNG', 10, 'https://example.com/karsa.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (38, 'Xie', 'Zhao-Hong', '369', 'TOP', 10, 'https://example.com/369.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Yu', 'Wen-Bo', 'JackeyLove', 'ADC', 10, 'https://example.com/jackeylove.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Zhuo', 'Ding', 'Knight', 'MID', 10, 'https://example.com/knight.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Wang', 'Liu-Yi', 'Mark', 'SUPP', 10, 'https://example.com/mark.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Hung', 'Hao-Hsuan', 'Karsa', 'JUNG', 10, 'https://example.com/karsa.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Xie', 'Zhao-Hong', '369', 'TOP', 10, 'https://example.com/369.jpg');
 
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (39, 'Kim', 'Tae-Sang', 'Doinb', 'MID', 11, 'https://example.com/doinb.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (40, 'Lin', 'Wei-Xiang', 'Lwx', 'ADC', 11, 'https://example.com/lwx.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (41, 'Liu', 'Qing-Song', 'Crisp', 'SUPP', 11, 'https://example.com/crisp.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (42, 'Gao', 'Zhen-Ning', 'Tian', 'JUNG', 11, 'https://example.com/tian.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (43, 'Kim', 'Han-Saem', 'GimGoon', 'TOP', 11, 'https://example.com/gimgoon.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Kim', 'Tae-Sang', 'Doinb', 'MID', 11, 'https://example.com/doinb.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Lin', 'Wei-Xiang', 'Lwx', 'ADC', 11, 'https://example.com/lwx.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Liu', 'Qing-Song', 'Crisp', 'SUPP', 11, 'https://example.com/crisp.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Gao', 'Zhen-Ning', 'Tian', 'JUNG', 11, 'https://example.com/tian.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Kim', 'Han-Saem', 'GimGoon', 'TOP', 11, 'https://example.com/gimgoon.jpg');
 
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (44, 'Song', 'Eui-Jin', 'Rookie', 'MID', 12, 'https://example.com/rookie.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (45, 'Yu', 'Tai-Yuan', 'Baolan', 'SUPP', 12, 'https://example.com/baolan.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (46, 'Kang', 'Seung-Lok', 'TheShy', 'TOP', 12, 'https://example.com/theshy.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (47, 'Gao', 'Zhen-Ning', 'Ning', 'JUNG', 12, 'https://example.com/ning.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (48, 'Yu', 'Wen-Bo', 'JackeyLove', 'ADC', 12, 'https://example.com/jackeylove.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Song', 'Eui-Jin', 'Rookie', 'MID', 12, 'https://example.com/rookie.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Yu', 'Tai-Yuan', 'Baolan', 'SUPP', 12, 'https://example.com/baolan.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Kang', 'Seung-Lok', 'TheShy', 'TOP', 12, 'https://example.com/theshy.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Gao', 'Zhen-Ning', 'Ning', 'JUNG', 12, 'https://example.com/ning.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Yu', 'Wen-Bo', 'JackeyLove', 'ADC', 12, 'https://example.com/jackeylove.jpg');
 
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (49, 'Kaan', 'Okan', 'Naak Nako', 'TOP', 13, 'https://example.com/player1.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (50, 'Linas', 'Nauncikas', 'Lyncas', 'JUNG', 13, 'https://example.com/player2.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (51, 'Mateusz', 'Czajka', 'Czajek', 'MID', 13, 'https://example.com/player3.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (52, 'Matyáš', 'Orság', 'Carzzy', 'ADC', 13, 'https://example.com/player4.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (53, 'Zdravets', 'Iliev Galabov', 'Hyllisang', 'SUPP', 13, 'https://example.com/player5.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Kaan', 'Okan', 'Naak Nako', 'TOP', 13, 'https://example.com/player1.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Linas', 'Nauncikas', 'Lyncas', 'JUNG', 13, 'https://example.com/player2.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Mateusz', 'Czajka', 'Czajek', 'MID', 13, 'https://example.com/player3.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Matyáš', 'Orság', 'Carzzy', 'ADC', 13, 'https://example.com/player4.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Zdravets', 'Iliev Galabov', 'Hyllisang', 'SUPP', 13, 'https://example.com/player5.jpg');
 
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (54, 'Kim', 'Chang-Dong', 'Canna', 'TOP', 14, 'https://example.com/player6.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (55, 'Can', 'Çelik', 'Closer', 'JUNG', 14, 'https://example.com/player7.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (56, 'Vladimiros', 'Kourtidis', 'Vladi', 'MID', 14, 'https://example.com/player8.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (57, 'Caliste', 'Henry-Hennebert', 'Caliste', 'ADC', 14, 'https://example.com/player9.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (58, 'Raphaël', 'Crabbé', 'Targamas', 'SUPP', 14, 'https://example.com/player10.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Kim', 'Chang-Dong', 'Canna', 'TOP', 14, 'https://example.com/player6.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Can', 'Çelik', 'Closer', 'JUNG', 14, 'https://example.com/player7.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Vladimiros', 'Kourtidis', 'Vladi', 'MID', 14, 'https://example.com/player8.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Caliste', 'Henry-Hennebert', 'Caliste', 'ADC', 14, 'https://example.com/player9.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Raphaël', 'Crabbé', 'Targamas', 'SUPP', 14, 'https://example.com/player10.jpg');
 
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (59, 'Alex', 'Pastor Villarejo', 'Myrwn', 'TOP', 15, 'https://example.com/player11.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (60, 'Javier', 'Prades Batalla', 'Elyoya', 'JUNG', 15, 'https://example.com/player12.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (61, 'Bartłomiej', 'Przewoźnik', 'Fresscovid', 'MID', 15, 'https://example.com/player13.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (62, 'David', 'Martinez Garcia', 'Supa', 'ADC', 15, 'https://example.com/player14.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (63, 'Álvaro', 'Fernandez', 'Alvaro', 'SUPP', 15, 'https://example.com/player15.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Alex', 'Pastor Villarejo', 'Myrwn', 'TOP', 15, 'https://example.com/player11.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Javier', 'Prades Batalla', 'Elyoya', 'JUNG', 15, 'https://example.com/player12.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Bartłomiej', 'Przewoźnik', 'Fresscovid', 'MID', 15, 'https://example.com/player13.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('David', 'Martinez Garcia', 'Supa', 'ADC', 15, 'https://example.com/player14.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Álvaro', 'Fernandez', 'Alvaro', 'SUPP', 15, 'https://example.com/player15.jpg');
 
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (64, 'David', 'Perez', 'Szygenda', 'TOP', 16, 'https://example.com/player16.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (65, 'Sébastien', 'Sanchez', 'Markoon', 'JUNG', 16, 'https://example.com/player17.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (66, 'Christophe', 'Ramirez', 'Larssen', 'MID', 16, 'https://example.com/player18.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (67, 'Philippe', 'Torres', 'Comp', 'ADC', 16, 'https://example.com/player19.jpg');
-INSERT INTO players (id, first_name, last_name, pseudo, role, team_id, image) VALUES (68, 'Laurent', 'Flores', 'Zoelys', 'SUPP', 16, 'https://example.com/player20.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('David', 'Perez', 'Szygenda', 'TOP', 16, 'https://example.com/player16.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Sébastien', 'Sanchez', 'Markoon', 'JUNG', 16, 'https://example.com/player17.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Christophe', 'Ramirez', 'Larssen', 'MID', 16, 'https://example.com/player18.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Philippe', 'Torres', 'Comp', 'ADC', 16, 'https://example.com/player19.jpg');
+INSERT INTO players (first_name, last_name, pseudo, role, team_id, image) VALUES ('Laurent', 'Flores', 'Zoelys', 'SUPP', 16, 'https://example.com/player20.jpg');
 
 INSERT INTO player_champion (id, player_id, champion_id) VALUES (1, 1, 87);
 INSERT INTO player_champion (id, player_id, champion_id) VALUES (2, 1, 57);
@@ -259,15 +259,15 @@ INSERT INTO team_compete (id, team_id, compete_id) VALUES (8, 10, 3);
 INSERT INTO team_compete (id, team_id, compete_id) VALUES (9, 11, 3);
 INSERT INTO team_compete (id, team_id, compete_id) VALUES (10, 12, 3);
 
-INSERT INTO matchs (id, date,order_match, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (2, '2024-03-01',1, 1, 4, false, '15-12', 1, 2);
-INSERT INTO matchs (id, date,order_match, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (4, '2024-09-01',1, 2, 8, true, '19-28', 2, 13);
-INSERT INTO matchs (id, date,order_match, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (5, '2024-02-01',2, 2, 8, true, '19-28', 2, 4);
-INSERT INTO matchs (id, date,order_match, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (7, '2024-06-01',1, 9, 12, true, '2-10', 3, 7);
-INSERT INTO matchs (id, date,order_match, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (8, '2024-06-01',2, 10, 11, true, '13-10', 3, 11);
-INSERT INTO matchs (id, date,order_match, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (9, '2024-06-01',3, 11, 9, false, '20-5', 3, 8);
-INSERT INTO matchs (id, date,order_match, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (10, '2024-06-01',4, 12, 10, false, '22-10', 3, 11);
-INSERT INTO matchs (id, date,order_match, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (11, '2024-06-01',5, 12, 11, false, '13-4', 3, 11);
-INSERT INTO matchs (id, date,order_match, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES (6, '2024-08-01',1, 5, 7, true, '22-25', 4, 5);
+INSERT INTO matchs (date, order_match, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES ('2024-03-01',1, 1, 4, false, '15-12', 1, 2);
+INSERT INTO matchs (date, order_match, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES ('2024-09-01',1, 2, 8, true, '19-28', 2, 13);
+INSERT INTO matchs (date, order_match, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES ('2024-02-01',2, 2, 8, true, '19-28', 2, 4);
+INSERT INTO matchs (date, order_match, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES ('2024-06-01',1, 9, 12, true, '2-10', 3, 7);
+INSERT INTO matchs (date, order_match, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES ('2024-06-01',2, 10, 11, true, '13-10', 3, 11);
+INSERT INTO matchs (date, order_match, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES ('2024-06-01',3, 11, 9, false, '20-5', 3, 8);
+INSERT INTO matchs (date, order_match, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES ( '2024-06-01',4, 12, 10, false, '22-10', 3, 11);
+INSERT INTO matchs (date, order_match, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES ( '2024-06-01',5, 12, 11, false, '13-4', 3, 11);
+INSERT INTO matchs (date, order_match, team1_id, team2_id, result, score, compete_id, joueur_id) VALUES ('2024-08-01',1, 5, 7, true, '22-25', 4, 5);
 
 INSERT INTO champions (id, name, title, lore, tags) VALUES
     (1,	'Annie',	'the Dark Child',	'In the time shortly before the League, there were those within the sinister city-state of Noxus who did not agree with the evils perpetrated by the Noxian High Command. The High Command had just put down a coup attempt from the self-proclaimed Crown Prince Raschallion, and a crack down on any form of dissent against the new government was underway. These political and social outcasts, known as the Gray Order, sought to leave their neighbors in peace as they pursued dark arcane knowledge. The leaders of this outcast society were a married couple: Gregori Hastur, the Gray Warlock, and his wife Amoline, the Shadow Witch. Together they led an exodus of magicians and other intelligentsia from Noxus, resettling their followers beyond the Great Barrier to the northern reaches of the unforgiving Voodoo Lands. Though survival was a challenge at times, the Gray Orders colony managed to thrive in a land where so many others would have failed.Years after the exodus, Gregori and Amoline had a child: Annie. Early on, Annies parents knew there was something special about their daughter. At the age of two, Annie miraculously ensorcelled a shadow bear - a ferocious denizen of the petrified forests outside the colony - turning it into her pet. To this day she keeps her bear Tibbers by her side, often keeping him spellbound as a stuffed doll to be carried like a childs toy. The combination of Annies lineage and the dark magic of her birthplace have given this little girl tremendous arcane power. It is this same girl who now finds herself as one of the most sought-after champions within the League of Legends - even by the city-state that would have exiled her parents had they not fled beforehand.Annie may be one of the most powerful champions ever to have fought in a Field of Justice. I shudder to think of her capabilities when she becomes an adult.-- High Councilor Kiersta Mandrake',	'mage,ranged,recommended'),
