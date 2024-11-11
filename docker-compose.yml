@@ -1,14 +1,39 @@
 version: '3.1'
 services:
-  database:
-    container_name: api_database
-    image: postgres
-    restart: always
-    env_file:
-      - .env
-    environment:
-      POSTGRES_USER : ${DATABASE_USER}
-      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
-      POSTGRES_DB: ${DATABASE_NAME}
-    ports:
-      - "5432:5432"
+    api:
+        container_name: api
+        build: .
+        restart: always
+        env_file:
+        - .env
+        ports:
+        - "8080:8080"
+        depends_on:
+        - database
+        networks:
+        - lig-network
+
+    database:
+      container_name: api_database
+      image: postgres
+      restart: always
+      env_file:
+        - .env
+      environment:
+        POSTGRES_USER : ${DATABASE_USER}
+        POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+        POSTGRES_DB: ${DATABASE_NAME}
+      volumes:
+        - ./initdb:/docker-entrypoint-initdb.d
+        - postgres_data:/var/lib/postgresql/data
+      ports:
+        - "5432:5432"
+      networks:
+        - lig-network
+
+
+volumes:
+    postgres_data:
+
+networks:
+    lig-network:
