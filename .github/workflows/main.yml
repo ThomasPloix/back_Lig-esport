@@ -46,6 +46,26 @@ jobs:
           push: ${{ github.ref == 'refs/heads/main' }}
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/lig-esp-backend:latest
 
+  build-and-push-docker-image-database:
+    runs-on: ubuntu-latest
+    needs:
+      - test-backend
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Login to DockerHub
+        run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
+
+      - name: Build and push
+        id: docker_build
+        uses: docker/build-push-action@v3
+        with:
+          context: .
+          file: ./initdb/Dockerfile
+          push: ${{ github.ref == 'refs/heads/main' }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/lig-esp-database:latest
+
 #  deploy-backend:
 #    runs-on: ubuntu-latest
 #    needs:
