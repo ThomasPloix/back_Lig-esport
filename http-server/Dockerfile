@@ -1,3 +1,3 @@
 FROM httpd:alpine
 
-COPY httpd.conf /usr/local/apache2/conf/httpd.conf
+COPY /http-server/httpd.conf /usr/local/apache2/conf/httpd.conf
