@@ -38,4 +38,19 @@ public class Match {
     @ManyToOne
     @JoinColumn(name="compete_id", nullable=false)
     private Compete compete;
+
+    @Override
+    public String toString() {
+        return "Match{" +
+                "id=" + id +
+                ", date=" + date +
+                ", order_match=" + order_match +
+                ", team1=" + team1 +
+                ", team2=" + team2 +
+                ", result=" + result +
+                ", score='" + score + '\'' +
+                ", champions_picked=" + champions_picked +
+                ", compete=" + compete +
+                '}';
+    }
 }

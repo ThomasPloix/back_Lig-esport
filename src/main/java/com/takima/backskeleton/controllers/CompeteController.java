@@ -2,7 +2,9 @@ package com.takima.backskeleton.controllers;
 
 
 import com.takima.backskeleton.DTO.CompeteDto;
+import com.takima.backskeleton.DTO.MatchDto;
 import com.takima.backskeleton.models.Compete;
+import com.takima.backskeleton.models.Match;
 import com.takima.backskeleton.models.Team;
 import com.takima.backskeleton.services.CompeteService;
 import lombok.RequiredArgsConstructor;
@@ -33,6 +35,11 @@ public class CompeteController {
     public Compete createCompete(@RequestBody CompeteDto competeDto) {
         System.out.println("COMPETE:  "+  competeDto.toString());
         return competeService.addCompete(competeDto);
+    }
+
+    @GetMapping("/{competeId}/matchs")
+    public List<Match> getCompeteWithMatch(@PathVariable Long competeId) {
+        return competeService.getCompeteWithMatch(competeId);
     }
 
 //    @GetMapping("/{competeId}/teams")

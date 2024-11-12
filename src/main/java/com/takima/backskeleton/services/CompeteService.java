@@ -1,8 +1,11 @@
 package com.takima.backskeleton.services;
 import com.takima.backskeleton.DAO.CompeteDao;
+import com.takima.backskeleton.DAO.MajorDao;
 import com.takima.backskeleton.DTO.CompeteDto;
 import com.takima.backskeleton.DTO.CompeteMapper;
+import com.takima.backskeleton.DTO.MatchDto;
 import com.takima.backskeleton.models.Compete;
+import com.takima.backskeleton.models.Match;
 import com.takima.backskeleton.models.Region;
 import com.takima.backskeleton.models.Team;
 import lombok.RequiredArgsConstructor;
@@ -22,6 +25,13 @@ public class CompeteService {
     }
     public List<Compete> findAll() {
         return competeDao.findAll();
+    }
+
+    public List<Match> getCompeteWithMatch(Long id) {
+        List<Match> competeDto= competeDao.getCompeteWithMatch(id);
+        System.out.println(competeDao.getCompeteWithMatch(id));
+
+        return competeDto;
     }
 
     @Transactional
