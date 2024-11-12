@@ -23,7 +23,7 @@ jobs:
           distribution: 'corretto'
 
       - name: Build and Test maven
-        run: mvn -B package --file pom.xml
+        run: mvn -B clean verify --file pom.xml
 
 
   build-and-push-docker-image-back:
