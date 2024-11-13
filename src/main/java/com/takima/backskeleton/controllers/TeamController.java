@@ -36,7 +36,6 @@ public class TeamController {
     @CrossOrigin (origins = "http://localhost:4200")
     @PostMapping("")
     public Team createTeam(@RequestBody TeamDto team) {
-        System.out.println(team);
         return teamService.createTeam(team);
     }
 

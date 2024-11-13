@@ -30,7 +30,7 @@ public class Player {
             joinColumns = @JoinColumn(name = "player_id"),
             inverseJoinColumns = @JoinColumn(name = "champion_id"))
     private List<Champion> champion_prefs;
-    @ManyToOne(cascade = CascadeType.MERGE)
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "team_id", referencedColumnName = "id")
     @JsonIgnore
     private Team team;
@@ -47,6 +47,14 @@ public class Player {
         this.champion_prefs = builder.champion_prefs;
     }
     public Player() {
+    }
+
+    public void setTeam(Team team) {
+        this.team = team;
+    }
+
+    public void setChampion_prefs(List<Champion> championPrefs) {
+        this.champion_prefs = championPrefs;
     }
 
     public static class Builder {
@@ -91,6 +99,10 @@ public class Player {
         public Player build() {
             return new Player(this);
         }
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
 }

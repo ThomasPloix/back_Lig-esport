@@ -130,7 +130,7 @@ public class Team {
                 ", creation_date=" + creation_date +
                 ", players=" + players +
                 ", competes=" + competes +
-                ", region=" + region +
+                ", region=" + region.getId() +
                 '}';
     }
 }
