@@ -14,18 +14,18 @@ import java.util.List;
 @Getter
 public class CompeteDto {
     private String name;
-    private List<Team> teams;
-    private Long regionId;
-    private List<Match> match;
+    private List<Team> teams_compete;
+    private Long region;
+    private List<Match> matches;
 
 
     @Override
     public String toString() {
         return "CompeteDto{" +
                 "name='" + name + '\'' +
-                ", teams=" + teams +
-                ", regionID=" + regionId +
-                ", match=" + match +
+                ", teams=" + teams_compete +
+                ", regionID=" + region +
+                ", match=" + matches +
                 '}';
     }
 }
