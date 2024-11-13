@@ -1,7 +1,7 @@
 version: '3.1'
 services:
     api:
-        container_name: api
+        container_name: lig_api
         build: .
         restart: always
         env_file:
@@ -14,7 +14,7 @@ services:
         - lig-network
 
     database:
-      container_name: api_database
+      container_name: lig_database
       build: ./initdb/.
       restart: always
       env_file:
