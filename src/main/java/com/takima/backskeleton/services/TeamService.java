@@ -49,6 +49,12 @@ public class TeamService {
         }
         return teamDao.save(team);
     }
+    // Delete team by Name
+    @Transactional
+    public void deleteTeamByName(String name) {
+        Team team = teamDao.findByName(name).orElseThrow(() -> new RuntimeException("Team not found with name: " + name));
+        teamDao.delete(team);
+    }
 
 
 

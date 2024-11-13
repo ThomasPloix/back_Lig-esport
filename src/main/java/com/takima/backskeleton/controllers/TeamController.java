@@ -40,4 +40,10 @@ public class TeamController {
         return teamService.createTeam(team);
     }
 
+    // Endpoint to delete a team by its Name
+    @DeleteMapping("/name/{name}")
+    public void deleteTeamByName(@PathVariable String name) {
+        teamService.deleteTeamByName(name);
+    }
+
 }
