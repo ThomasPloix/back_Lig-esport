@@ -36,8 +36,13 @@ public class TeamController {
     @CrossOrigin (origins = "http://localhost:4200")
     @PostMapping("")
     public Team createTeam(@RequestBody TeamDto team) {
-        System.out.println(team);
         return teamService.createTeam(team);
+    }
+
+    // Endpoint to delete a team by its Name
+    @DeleteMapping("/name/{name}")
+    public void deleteTeamByName(@PathVariable String name) {
+        teamService.deleteTeamByName(name);
     }
 
 }

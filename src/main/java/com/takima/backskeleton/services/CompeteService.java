@@ -38,7 +38,7 @@ public class CompeteService {
     public Compete addCompete(CompeteDto competeDto) {
         Compete compete;
         try {
-            Region region= regionService.getById(competeDto.getRegionId());
+            Region region= regionService.getById(competeDto.getRegion());
             compete = CompeteMapper.fromDto(competeDto, null, region);
         } catch (Exception e) {
             throw new RuntimeException("Error with Compete", e);

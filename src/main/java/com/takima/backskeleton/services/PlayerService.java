@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -17,6 +18,13 @@ public class PlayerService {
 
 
         return playerDao.findById(id).orElseThrow();
+    }
+
+    public Player updatePlayer(Player player) {
+        Optional<Player> player1 = playerDao.findByPseudo(player.getPseudo());
+        player1.ifPresent(value ->
+                player.setId(value.getId()));
+        return playerDao.saveAndFlush(player);
     }
 
     public List<Player> findAll() {
