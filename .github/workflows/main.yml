@@ -43,6 +43,10 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
+          env:
+            DATABASE_NAME: ${{ secrets.DATABASE_NAME }}
+            DATABASE_USER: ${{ secrets.DATABASE_USER }}
+            DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
           push: ${{ github.ref == 'refs/heads/main' }}
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/lig-esp-backend:latest
 
@@ -59,7 +63,12 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v3
         with:
-          context: ./initdb
+          context: ./initdb/.
+          file: ./initdb/Dockerfile
+          env:
+            POSTGRES_DB: ${{ secrets.DATABASE_NAME }}
+            POSTGRES_USER: ${{ secrets.DATABASE_USER }}
+            POSTGRES_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
           push: ${{ github.ref == 'refs/heads/main' }}
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/lig-esp-database:latest
 
