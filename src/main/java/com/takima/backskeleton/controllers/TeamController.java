@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin (origins = "http://localhost:4200")
+@CrossOrigin
 @RequestMapping("team")
 @RestController
 @RequiredArgsConstructor
@@ -33,7 +33,6 @@ public class TeamController {
         return teamService.getPlayersOfTeam(id);
     }
 
-    @CrossOrigin (origins = "http://localhost:4200")
     @PostMapping("")
     public Team createTeam(@RequestBody TeamDto team) {
         return teamService.createTeam(team);

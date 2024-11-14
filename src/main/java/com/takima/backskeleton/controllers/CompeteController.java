@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin (origins = "http://localhost:4200")
+@CrossOrigin
 @RequestMapping("compete")
 @RestController
 @RequiredArgsConstructor
@@ -30,7 +30,6 @@ public class CompeteController {
         return competeService.findAll();
     }
 
-    @CrossOrigin
     @PostMapping("")
     public Compete createCompete(@RequestBody CompeteDto competeDto) {
         System.out.println("COMPETE:  "+  competeDto.toString());
