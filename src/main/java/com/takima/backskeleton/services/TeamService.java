@@ -43,9 +43,7 @@ public class TeamService {
         Team team ;
         try{
             Region region= regionService.getById(teamDto.getRegion_id());
-            System.out.printf("Region %s\n", region.toString() );
             team = TeamMapper.fromDto(teamDto, null, region);
-            System.out.printf("Team %s\n", team.toString() );
             var team1 = teamDao.saveAndFlush(team);
             for (int i = 0; i < team.getPlayers().size(); i++) {
                 team.getPlayers().get(i).setTeam(team1);

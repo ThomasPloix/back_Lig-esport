@@ -53,4 +53,9 @@ public class Match {
                 ", compete=" + compete +
                 '}';
     }
+
+    public Match setCompete(Compete compete) {
+        this.compete = compete;
+        return this;
+    }
 }

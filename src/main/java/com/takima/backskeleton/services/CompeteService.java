@@ -19,6 +19,7 @@ import java.util.List;
 public class CompeteService {
     private final CompeteDao competeDao;
     private final RegionService regionService;
+    private final MatchService matchService;
 
     public Compete getById(Long id){
         return competeDao.findById(id).orElseThrow();
@@ -40,6 +41,11 @@ public class CompeteService {
         try {
             Region region= regionService.getById(competeDto.getRegion());
             compete = CompeteMapper.fromDto(competeDto, null, region);
+            var compete1 = competeDao.saveAndFlush(compete);
+            for (int i = 1; i < compete.getMatches().size(); i++ ) {
+                Match match = compete.getMatches().get(i);
+                matchService.createMatch(match.setCompete(compete1));
+            }
         } catch (Exception e) {
             throw new RuntimeException("Error with Compete", e);
         }

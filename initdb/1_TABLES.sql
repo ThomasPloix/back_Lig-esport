@@ -85,7 +85,7 @@ create table matchs
     result boolean,
     score TEXT not null,
     compete_id int not null,
-    joueur_id int not null
+    joueur_id int
 );
 
 create table champions
