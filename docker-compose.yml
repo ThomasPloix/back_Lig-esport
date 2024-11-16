@@ -9,16 +9,14 @@ services:
         ports:
         - "8080:8080"
         depends_on:
-        - database
+        - lig_database
         networks:
         - lig-network
 
-    database:
+    lig_database:
       container_name: lig_database
       build: ./initdb/.
       restart: always
-      env_file:
-        - .env
       environment:
         POSTGRES_USER: ${DATABASE_USER}
         POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
